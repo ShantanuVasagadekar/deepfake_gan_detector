@@ -19,11 +19,7 @@ deepfake_gan_detector/
 ├── train_classifier.py      # Training script — Multi-Branch ConvNeXt
 ├── train_gan.py             # Training script — DCGAN
 ├── train_pipeline.py        # End-to-end training pipeline
-├── train_lightning.py       # PyTorch Lightning training wrapper
 ├── evaluate_model.py        # Evaluation + metrics generation
-├── dataset_downloader.py    # Kaggle dataset download helper
-├── dataset_expander.py      # Dataset augmentation utility
-├── extract_frames.py        # Video → frame extraction
 ├── download_hf_model.py     # HuggingFace Swin Transformer downloader
 ├── download_xade_model.py   # XADE model downloader helper
 ├── requirements.txt         # Python dependencies
@@ -160,19 +156,19 @@ Prints a JSON result with verdict, confidence score, and per-signal breakdown.
 
 ## 🗃️ Training From Scratch (Optional)
 
-If you want to retrain the models yourself:
+Pre-trained weights are provided (see above). If you want to retrain:
 
-1. **Download datasets** via:
-   ```bash
-   python dataset_downloader.py
-   ```
-2. **Train the classifier**:
+1. **Train the classifier**:
    ```bash
    python train_classifier.py
    ```
-3. **Train the GAN**:
+2. **Train the GAN**:
    ```bash
    python train_gan.py
+   ```
+3. **Full pipeline**:
+   ```bash
+   python train_pipeline.py
    ```
 4. **Evaluate**:
    ```bash
