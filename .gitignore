@@ -1,0 +1,74 @@
+# ─── Virtual Environments ────────────────────────────────────────────
+venv_gpu/
+venv/
+env/
+.env/
+.venv/
+
+# ─── Python Cache ─────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ─── Model Weights (trained — download separately) ───────────────────
+saved_models/*.pth
+saved_models/*.pt
+saved_models/hf_deepfake_model/
+saved_models/xade_model/
+AI-image-detector/pytorch_model.bin
+AI-image-detector/.git/
+
+# ─── Datasets ─────────────────────────────────────────────────────────
+dataset/
+*.csv
+*.h5
+
+# ─── Large Archives ───────────────────────────────────────────────────
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+
+# ─── Logs & Temporary Output Files ───────────────────────────────────
+*.log
+studio_create.log
+classifier_training.log
+
+# ─── Junk / Scratch Output Files ─────────────────────────────────────
+charlie.json
+charlie_result.txt
+charlie_vit.txt
+000003_fake.json
+debug_probs.json
+debug_probs_face.json
+extra_test.json
+vit_fake.json
+win_result.json
+test_output.txt
+test_fake_output.txt
+verify_broad.txt
+verify_dual.txt
+verify_full.txt
+cp_help.txt
+lightning_help.txt
+studio_create_help.txt
+vm_help.txt
+
+# ─── Help / Cloud Setup ───────────────────────────────────────────────
+setup_studio.sh
+get-pip.py
+
+# ─── PDF Submissions ──────────────────────────────────────────────────
+PRN_DeepShield_FinalReport.pdf
+
+# ─── OS / IDE ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
